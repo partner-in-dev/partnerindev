@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/partnerindev/insydin/static/css/main.f98656c7.chunk.css",
+    "main.js": "/partnerindev/insydin/static/js/main.651bc592.chunk.js",
+    "main.js.map": "/partnerindev/insydin/static/js/main.651bc592.chunk.js.map",
+    "runtime-main.js": "/partnerindev/insydin/static/js/runtime-main.a6b0974a.js",
+    "runtime-main.js.map": "/partnerindev/insydin/static/js/runtime-main.a6b0974a.js.map",
+    "static/js/2.b9eae9f5.chunk.js": "/partnerindev/insydin/static/js/2.b9eae9f5.chunk.js",
+    "static/js/2.b9eae9f5.chunk.js.map": "/partnerindev/insydin/static/js/2.b9eae9f5.chunk.js.map",
+    "static/js/3.9299f8b0.chunk.js": "/partnerindev/insydin/static/js/3.9299f8b0.chunk.js",
+    "static/js/3.9299f8b0.chunk.js.map": "/partnerindev/insydin/static/js/3.9299f8b0.chunk.js.map",
+    "index.html": "/partnerindev/insydin/index.html",
+    "static/css/main.f98656c7.chunk.css.map": "/partnerindev/insydin/static/css/main.f98656c7.chunk.css.map",
+    "static/js/2.b9eae9f5.chunk.js.LICENSE.txt": "/partnerindev/insydin/static/js/2.b9eae9f5.chunk.js.LICENSE.txt",
+    "static/media/collection_image.90e3ab6d.png": "/partnerindev/insydin/static/media/collection_image.90e3ab6d.png",
+    "static/media/logo.b0ab8c91.png": "/partnerindev/insydin/static/media/logo.b0ab8c91.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6b0974a.js",
+    "static/js/2.b9eae9f5.chunk.js",
+    "static/css/main.f98656c7.chunk.css",
+    "static/js/main.651bc592.chunk.js"
+  ]
+}
