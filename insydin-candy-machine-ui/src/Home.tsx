@@ -1,11 +1,16 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import * as anchor from "@project-serum/anchor";
+import "./Home.css";
 
 import styled from "styled-components";
 import { Container, Snackbar } from "@material-ui/core";
 import Paper from "@material-ui/core/Paper";
 import Alert from "@material-ui/lab/Alert";
 import Grid from "@material-ui/core/Grid";
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import collectionImage from './images/collection_image.png';
+import logo from './images/logo.png';
 import Typography from "@material-ui/core/Typography";
 import {
   Commitment,
@@ -489,8 +494,18 @@ const Home = (props: HomeProps) => {
   }, [refreshCandyMachineState]);
 
   return (
-    <Container style={{ marginTop: 100 }}>
-      <Container maxWidth="xs" style={{ position: "relative" }}>
+    <Container style={{  }}>
+      <Container style={{ width: '100%', textAlign: 'center', marginTop: '20px' }}>
+        <img src={logo} style = {{ height: '10vh', maxHeight: 400, minHeight: 100, }} />
+        {/* <Card>
+          <CardMedia
+            component="img"
+            src={logo}
+            alt="Logo"
+          />
+        </Card> */}
+      </Container>
+      <Container maxWidth="xs" style={{ position: "relative", marginTop: '100px'}}>
         <Paper
           style={{
             padding: 24,
@@ -499,6 +514,13 @@ const Home = (props: HomeProps) => {
             borderRadius: 6,
           }}
         >
+          <Card>
+            <CardMedia
+              component="img"
+              src={collectionImage}
+              alt="Collection Image"
+            />
+          </Card>
           {!wallet.connected ? (
             <ConnectButton>Connect Wallet</ConnectButton>
           ) : (
@@ -708,7 +730,7 @@ const Home = (props: HomeProps) => {
             display="block"
             style={{ marginTop: 7, color: "grey" }}
           >
-            Powered by METAPLEX
+            Team Insydin!
           </Typography>
         </Paper>
       </Container>
@@ -727,6 +749,13 @@ const Home = (props: HomeProps) => {
           {alertState.message}
         </Alert>
       </Snackbar>
+      <div className={"bg-gradient-blur-container"}>
+        <div className={"bg-gradient-blur-wrapper"}>
+          <div className={"bg-gradient-blur-circle-3 pink big"}></div>
+          <div className={"bg-gradient-blur-circle-2 blue-2"}></div>
+          <div className={"bg-gradient-blur-circle-1 purple-2 big"}></div>
+        </div>
+      </div>
     </Container>
   );
 };
